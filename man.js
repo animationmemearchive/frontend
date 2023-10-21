@@ -14,7 +14,7 @@ window.onload = function () {
                     <source src="${entry.fullPath}" type="video/mp4">
                     </video>
                     <br>
-                    <a href="${entry.fullPath}" target="_blank">${entry.fileInfo.title}</a>
+                    <a href="${entry.fullPath}" target="_blank">${entry.fileInfo.title || entry.filename}</a>
                     <p>by ${entry.fileInfo.author}</p>`;
 
                 videogrid.appendChild(videoContainer);
