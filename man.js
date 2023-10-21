@@ -9,30 +9,13 @@ window.onload = function () {
                 videoContainer.classList.add('videocontainer');
                 videoContainer.style.textAlign = 'center';
 
-                const video = document.createElement('video');
-                video.width = 320;
-                video.height = 240;
-                video.controls = true;
-                video.preload = 'none';
-
-                const source = document.createElement('source');
-                source.src = entry.fullPath;
-                source.type = 'video/mp4';
-
-                video.appendChild(source);
-                videoContainer.appendChild(video);
-
-                const link = document.createElement('a');
-                link.href = entry.fullPath;
-                link.target = '_blank';
-                link.textContent = entry.fileInfo.title;
-
-                const author = document.createElement('p');
-                author.textContent = `by ${entry.fileInfo.author}`;
-
-                videoContainer.appendChild(document.createElement('br'));
-                videoContainer.appendChild(link);
-                videoContainer.appendChild(author)
+                videoContainer.innerHTML =
+                    `<video width="320" height="240" controls preload="none">
+                    <source src="${entry.fullPath}" type="video/mp4">
+                    </video>
+                    <br>
+                    <a href="${entry.fullPath}" target="_blank">${entry.fileInfo.title}</a>
+                    <p>by ${entry.fileInfo.author}</p>`;
 
                 videogrid.appendChild(videoContainer);
             });
