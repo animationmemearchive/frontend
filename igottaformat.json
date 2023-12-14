@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "attributes": {
+                "title": "spiderman 8K dolby",
+                "description": null,
+                "createdAt": "2023-12-13T22:26:53.772Z",
+                "updatedAt": "2023-12-13T22:27:02.040Z",
+                "publishedAt": "2023-12-13T22:26:57.736Z",
+                "video": {
+                    "data": {
+                        "id": 1,
+                        "attributes": {
+                            "name": "Spiderman-8K-Dolby.mp4",
+                            "alternativeText": null,
+                            "caption": null,
+                            "width": null,
+                            "height": null,
+                            "formats": null,
+                            "hash": "Spiderman_8_K_Dolby_bf8e6b7e6c",
+                            "ext": ".mp4",
+                            "mime": "video/mp4",
+                            "size": 4047.11,
+                            "url": "/uploads/Spiderman_8_K_Dolby_bf8e6b7e6c.mp4",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2023-12-13T22:26:41.140Z",
+                            "updatedAt": "2023-12-13T22:26:41.140Z"
+                        }
+                    }
+                },
+                "thumbnail": {
+                    "data": null
+                },
+                "creator": {
+                    "data": {
+                        "id": 1,
+                        "attributes": {
+                            "Name": "Artificial",
+                            "createdAt": "2023-12-14T18:38:07.704Z",
+                            "updatedAt": "2023-12-14T18:38:09.971Z",
+                            "publishedAt": "2023-12-14T18:38:09.969Z"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "page": 1,
+            "pageSize": 25,
+            "pageCount": 1,
+            "total": 1
+        }
+    }
+}
