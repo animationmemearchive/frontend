@@ -6,6 +6,6 @@
 
 <h1>animation memes</h1>
 {#each data.creators.data as creator}
-    <p>{creator.attributes.Name}</p>
+    <p>{creator.attributes.name}</p>
     <a href="/creators/{creator.id}"><button>go</button></a>
 {/each}

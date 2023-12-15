@@ -6,7 +6,7 @@
                 "title": "spiderman 8K dolby",
                 "description": null,
                 "createdAt": "2023-12-13T22:26:53.772Z",
-                "updatedAt": "2023-12-13T22:27:02.040Z",
+                "updatedAt": "2023-12-15T04:31:49.588Z",
                 "publishedAt": "2023-12-13T22:26:57.736Z",
                 "video": {
                     "data": {
@@ -32,7 +32,61 @@
                     }
                 },
                 "thumbnail": {
-                    "data": null
+                    "data": {
+                        "id": 2,
+                        "attributes": {
+                            "name": "free-birds-2013-was-a-huge-false-advertisement-because-nor-v0-zo4k0hzrov9a1.png",
+                            "alternativeText": null,
+                            "caption": null,
+                            "width": 852,
+                            "height": 834,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_free-birds-2013-was-a-huge-false-advertisement-because-nor-v0-zo4k0hzrov9a1.png",
+                                    "hash": "thumbnail_free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "path": null,
+                                    "width": 159,
+                                    "height": 156,
+                                    "size": 61.03,
+                                    "url": "/uploads/thumbnail_free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6.png"
+                                },
+                                "small": {
+                                    "name": "small_free-birds-2013-was-a-huge-false-advertisement-because-nor-v0-zo4k0hzrov9a1.png",
+                                    "hash": "small_free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "path": null,
+                                    "width": 500,
+                                    "height": 489,
+                                    "size": 524.29,
+                                    "url": "/uploads/small_free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6.png"
+                                },
+                                "medium": {
+                                    "name": "medium_free-birds-2013-was-a-huge-false-advertisement-because-nor-v0-zo4k0hzrov9a1.png",
+                                    "hash": "medium_free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "path": null,
+                                    "width": 750,
+                                    "height": 734,
+                                    "size": 1125.06,
+                                    "url": "/uploads/medium_free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6.png"
+                                }
+                            },
+                            "hash": "free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 283.93,
+                            "url": "/uploads/free_birds_2013_was_a_huge_false_advertisement_because_nor_v0_zo4k0hzrov9a1_a62b31cde6.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2023-12-15T04:31:46.754Z",
+                            "updatedAt": "2023-12-15T04:31:46.754Z"
+                        }
+                    }
                 },
                 "creator": {
                     "data": {
