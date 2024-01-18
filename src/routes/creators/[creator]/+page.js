@@ -1,15 +1,17 @@
 import { databases } from '$lib/appwrite.js';
+import { Query } from 'appwrite';
 
 export async function load({ params }) {
     let promise = await databases.listDocuments(
         "videos",
-        params.creator
+        "65a9b15650d2d14667ec",
+        [
+            Query.equal("$id", params.creator)
+        ]
     );
 
-    console.log(promise);
-
     return {
-        videos: promise.documents,
-        creator: params.creator
+        videos: promise.documents[0].videos,
+        creator: promise.documents[0].name
     };
 };
