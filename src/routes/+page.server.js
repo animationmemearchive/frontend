@@ -6,7 +6,6 @@ export async function load() {
 
     videocollection.collections.forEach(creator => {
         creators.push(creator.name);
-
     });
 
     return {
