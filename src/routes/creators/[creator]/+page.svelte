@@ -4,14 +4,14 @@
     export let data;
 </script>
 
-<h1>{data.videos.data[0].attributes.creator.data.attributes.name}</h1>
+<h1>{data.creator}</h1>
 
 <a href="/"><button>home</button></a><br /><br />
 
-{#each data.videos.data as video}
+{#each data.videos as video}
     <!-- svelte-ignore a11y-media-has-caption -->
     <video width="320" height="240" controls preload="none">
-        <source src={PUBLIC_BACKEND_HOST + video.attributes.video.data.attributes.url} type="video/mp4" />
+        <source src={`${PUBLIC_BACKEND_HOST}/animationmemes/${video.videoID}`} type="video/mp4" />
     </video>
-    <p>{video.attributes.title}</p>
+    <p>{video.title}</p>
 {/each}

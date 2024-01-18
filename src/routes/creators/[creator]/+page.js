@@ -1,10 +1,15 @@
-import axios from 'axios';
-import { PUBLIC_BACKEND_HOST } from '$env/static/public';
+import { databases } from '$lib/appwrite.js';
 
 export async function load({ params }) {
-    const response = await axios.get(`${PUBLIC_BACKEND_HOST}/api/videos?populate=*&filters[creator][id][$eq]=${params.creator}&sort[0]=title:asc`);
+    let promise = await databases.listDocuments(
+        "videos",
+        params.creator
+    );
+
+    console.log(promise);
 
     return {
-        videos: response.data
+        videos: promise.documents,
+        creator: params.creator
     };
 };

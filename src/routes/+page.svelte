@@ -1,11 +1,9 @@
 <script>
     export let data;
-
-    console.log(data.creators.data);
 </script>
 
 <h1>animation memes</h1>
-{#each data.creators.data as creator}
-    <p>{creator.attributes.name}</p>
-    <a href="/creators/{creator.id}"><button>go</button></a>
+{#each data.creators as creator}
+    <p>{creator.replace('/', '')}</p>
+    <a href="/creators/{creator}"><button>go</button></a>
 {/each}
