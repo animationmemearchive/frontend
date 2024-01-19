@@ -12,6 +12,6 @@ export async function load({ params }) {
 
     return {
         videos: promise.documents[0].videos,
-        creator: promise.documents[0].name
+        creator: promise.documents[0]
     };
 };
