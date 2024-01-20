@@ -4,14 +4,16 @@ import { Query } from 'appwrite';
 export async function load({ params }) {
     let promise = await databases.listDocuments(
         "videos",
-        "65a9b15650d2d14667ec",
+        "typh",
         [
-            Query.equal("$id", params.creator),
+            Query.equal("creators", params.creator),
+            Query.orderDesc('createdDate'),
+            Query.limit(100), // TODO: Pagination
         ]
     );
 
     return {
-        videos: promise.documents[0].videos,
-        creator: promise.documents[0]
+        videos: promise.documents,
+        creator: promise.documents[0].creators
     };
 };
