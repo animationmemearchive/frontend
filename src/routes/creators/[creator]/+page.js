@@ -6,7 +6,8 @@ export async function load({ params }) {
         "videos",
         "65a9b15650d2d14667ec",
         [
-            Query.equal("$id", params.creator)
+            Query.equal("$id", params.creator),
+            Query.orderDesc('createdDate'),
         ]
     );
 
