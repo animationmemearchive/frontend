@@ -7,7 +7,6 @@ export async function load({ params }) {
         "65a9b15650d2d14667ec",
         [
             Query.equal("$id", params.creator),
-            Query.orderDesc('title'),
         ]
     );
 

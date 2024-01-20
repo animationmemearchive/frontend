@@ -10,7 +10,7 @@
 <a href="/"><button>home</button></a><br /><br />
 
 <div class="video-grid">
-    {#each data.videos as video}
+    {#each data.videos.sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated)) as video}
         <!-- svelte-ignore a11y-media-has-caption -->
         <div class="videocontainer" style="text-align: center;">
             <video width="320" height="240" controls preload="none">
