@@ -24,8 +24,8 @@
             <li>
                 <div class="card">
                     <video
-                        width="320"
-                        height="240"
+                        width="100%"
+                        height="auto"
                         controls
                         preload="none"
                         poster={`${PUBLIC_API_ENDPOINT}/storage/buckets/thumbnails/files/${video.thumbID}/view?project=${PUBLIC_PROJECT_ID}`}>
