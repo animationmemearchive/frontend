@@ -1,9 +1,9 @@
-body {
+/* body {
         font-family: 'Lato', sans-serif;
         text-align: center;
         background-color: #303030;
         color: aliceblue;
-    }
+    } */
 
     .video-grid {
         display: grid;
@@ -12,19 +12,19 @@ body {
         justify-content: center;
     }
 
-    a {
+    /* a {
         margin-top: 10px;
         font-size: 1rem;
         text-decoration: none;
         color: #00bfff;
-    }
+    } */
 
     .videocontainer {
         background-color: #565656;
         padding: 10px;
     }
 
-    button {
+    /* button {
         font-size: large;
         appearance: auto;
         text-rendering: auto;
@@ -55,4 +55,4 @@ body {
         list-style-type: none;
         margin: 0;
         padding: 0;
-    }
+    } */
