@@ -13,7 +13,12 @@
     {#each data.videos as video}
         <!-- svelte-ignore a11y-media-has-caption -->
         <div class="videocontainer" style="text-align: center;">
-            <video width="320" height="240" controls preload="none">
+            <video
+                width="320"
+                height="240"
+                controls
+                preload="none"
+                poster={`${PUBLIC_API_ENDPOINT}/storage/buckets/thumbnails/files/${video.thumbID}/view?project=${PUBLIC_PROJECT_ID}`}>
                 <source
                     src={`${PUBLIC_API_ENDPOINT}/storage/buckets/videos/files/${video.videoID}/view?project=${PUBLIC_PROJECT_ID}`}
                     type="video/mp4" />
