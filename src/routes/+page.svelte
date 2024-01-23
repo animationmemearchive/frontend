@@ -21,12 +21,12 @@
                         </div>
                         <div class="grid-item-1-start-end">
                             <div class="status">
-                                <button class="tag is-info"><span class="text">Creator</span></button>
+                                <button class="tag is-info"><span class="text">{creator.type || 'Creator'}</span></button>
                             </div>
                         </div>
                         <div class="grid-item-1-end-start">
                             <div class="u-flex u-gap-16 u-flex-wrap">
-                                <a href="/creators/{creator.id}">
+                                <a href="/creators/{creator.$id}">
                                     <button class="button">
                                         <span class="text">View</span>
                                     </button>
