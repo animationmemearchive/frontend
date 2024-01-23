@@ -4,9 +4,12 @@
     import '@appwrite.io/pink';
 </script>
 
+<svelte:head>
+    <title>animation meme archive</title>
+</svelte:head>
+
 <div class="container">
-    <h1 class="heading-level-1">all the animation memes</h1>
-    <h3 class="heading-level-6">not actually tho</h3>
+    <h1 class="heading-level-1">animation meme archive</h1>
     <br />
     <ul class="grid-box" style="--grid-gap:2rem; --grid-item-size:18rem; --grid-item-size-small-screens:16rem;">
         {#each data.creators as creator}
@@ -18,7 +21,7 @@
                         </div>
                         <div class="grid-item-1-start-end">
                             <div class="status">
-                                <button class="tag" disabled><span class="text">Unknown</span></button>
+                                <button class="tag is-info"><span class="text">Creator</span></button>
                             </div>
                         </div>
                         <div class="grid-item-1-end-start">
@@ -37,5 +40,6 @@
     </ul>
 
     <br /><br />
-    <p>REBUILT! work in progress, design will hopefully be updated & creators re-added</p>
+    <p>REBUILT! work in progress, design subject to change & more creators coming soon</p>
+    <p class="body-text-1 u-bold">to request a takedown, please email animationmemes@arti.lol</p>
 </div>

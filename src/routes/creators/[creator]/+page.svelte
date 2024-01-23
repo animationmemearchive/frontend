@@ -7,6 +7,10 @@
     import '@appwrite.io/pink-icons';
 </script>
 
+<svelte:head>
+    <title>{data.creator.name} - animation meme archive</title>
+</svelte:head>
+
 <div class="container">
     <h1 class="heading-level-1">{data.creator.name}</h1>
     <a href={data.creator.sociallink}><h4 class="eyebrow-heading-3 link">{data.creator.sociallink}</h4></a>
@@ -24,6 +28,7 @@
             <li>
                 <div class="card">
                     <video
+                        style="max-height: 11.25rem; min-height: 11.25rem;"
                         width="100%"
                         height="auto"
                         controls
