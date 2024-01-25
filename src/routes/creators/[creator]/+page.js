@@ -29,3 +29,5 @@ export async function load({ params }) {
         creator: promise.documents[0].creators
     };
 };
+
+export const prerender = 'auto';

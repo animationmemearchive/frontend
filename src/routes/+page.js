@@ -7,3 +7,5 @@ export async function load() {
         creators: videocollection.documents
     };
 }
+
+export const prerender = 'auto';
