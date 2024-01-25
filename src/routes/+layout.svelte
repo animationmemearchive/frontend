@@ -5,7 +5,7 @@
     import '@appwrite.io/pink-icons';
 </script>
 
-<section class="alert is-action is-info">
+<!-- <section class="alert is-action is-info">
     <div class="alert-grid">
         <span class="icon-currency-dollar" aria-hidden="true"></span>
         <div class="alert-content">
@@ -19,6 +19,19 @@
                 </button></a>
         </div>
     </div>
-</section>
+</section> -->
+
+<img class="funnyimage" src="https://media.tenor.com/5ADmfF_2iUIAAAAe/ryo-yamada-bocchi-the-rock.png" />
 
 <slot />
+
+<style>
+    .funnyimage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 5;
+        position: fixed;
+    }
+</style>
