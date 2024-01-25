@@ -33,6 +33,7 @@
                         height="auto"
                         controls
                         preload="none"
+                        loading="lazy"
                         poster={`${PUBLIC_API_ENDPOINT}/storage/buckets/thumbnails/files/${video.thumbID}/view?project=${PUBLIC_PROJECT_ID}`}>
                         <source
                             src={`${PUBLIC_API_ENDPOINT}/storage/buckets/videos/files/${video.videoID}/view?project=${PUBLIC_PROJECT_ID}`}
