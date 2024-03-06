@@ -2,6 +2,15 @@
     export let data;
 
     import '@appwrite.io/pink';
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        const adscript = document.createElement('script');
+        adscript.type = 'text/javascript';
+        adscript.src = '//pl22709120.profitablegatecpm.com/ad8ef1360d3075aab7a24b45c61a1d20/invoke.js';
+        adscript.async = true;
+        document.body.appendChild(adscript);
+    });
 </script>
 
 <svelte:head>
@@ -10,6 +19,8 @@
 
 <div class="container">
     <h1 class="heading-level-1">animation meme archive</h1>
+    <br />
+    <div id="container-ad8ef1360d3075aab7a24b45c61a1d20"></div>
     <br />
     <ul class="grid-box" style="--grid-gap:2rem; --grid-item-size:18rem; --grid-item-size-small-screens:16rem;">
         {#each data.creators as creator}
