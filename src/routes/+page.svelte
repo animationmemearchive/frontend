@@ -9,7 +9,12 @@
         adscript.type = 'text/javascript';
         adscript.src = '//pl22709120.profitablegatecpm.com/ad8ef1360d3075aab7a24b45c61a1d20/invoke.js';
         adscript.async = true;
+        const analyticsScript = document.createElement('script');
+        analyticsScript.defer = true;
+        analyticsScript.dataset.domain = 'animationmemes.arti.lol';
+        analyticsScript.src = 'https://a.arti.lol/js/script.js';
         document.body.appendChild(adscript);
+        document.head.appendChild(analyticsScript);
     });
 </script>
 
