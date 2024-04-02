@@ -12,7 +12,7 @@
         const analyticsScript = document.createElement('script');
         analyticsScript.defer = true;
         analyticsScript.dataset.domain = 'animationmemes.arti.lol';
-        analyticsScript.src = 'https://a.arti.lol/js/script.js';
+        analyticsScript.src = 'https://a.arti.lol/js/script.outbound-links.file-downloads.js';
         document.body.appendChild(adscript);
         document.head.appendChild(analyticsScript);
     });
